@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,600;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Financial Survey</title>
+  </head>
+  <body>
+    <main class="main">
+      <aside class="side-bar">
+        <h1 id="title">Financial Survey</h1>
+
+        <p id="description">
+          This survey is to find the relationship between Tech related
+          individuals and how they generate a large sum of revenue in order to
+          properly rate an individuals job in Tech
+        </p>
+        <div class="image-2">
+          <img
+            src="https://images.unsplash.com/photo-1634757439914-23b8acb9d411?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=688&q=80"
+            alt="money moves"
+          />
+          <hr />
+          <h2 class="dev-head">Contact the developer</h2>
+          <div class="d-flex">
+            <a
+              class="redirect"
+              href="https://twitter.com/OmaEgbo?t=dBRpG1AnraPKOmkqjWQ4VQ&s=01"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><i class="fa fa-twitter fa-2x"></i
+            ></a>
+            <a
+              class="redirect"
+              href="https://www.linkedin.com/in/oma-egbo-299b87253"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fa fa-linkedin fa-2x"></i
+            ></a>
+            <a
+              class="redirect"
+              href="https://github.com/omaEgbo/"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><i class="fa fa-github fa-2x"></i
+            ></a>
+          </div>
+        </div>
+      </aside>
+      <section class="form">
+        <form class="form-el" action="" id="survey-form">
+          <h1 class="title">Welcome fill in your information for the survey</h1>
+          <p class="sub-title">
+            note all infromation are going to be confidential
+          </p>
+          <label id="name-label" for="name">
+            Enter your first name:
+            <input
+              name="name"
+              id="name"
+              type="text"
+              placeholder="exampleName"
+              required
+            />
+          </label>
+          <label id="email-label" for="email">
+            Enter an active Email:
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="example@Xmail.com"
+              required
+            />
+          </label>
+          <label id="number-label" for="number">
+            Enter an active number:
+            <input
+              type="number"
+              name="number"
+              id="number"
+              placeholder="08124369412"
+              min="11"
+              max="15"
+            />
+          </label>
+          <label for="occupation">
+            Select if your are employed:
+            <select name="dropdown" id="dropdown">
+              <option value="">Enter a value</option>
+              <option value="employed">employed</option>
+              <option value="unemployed">unemployed</option>
+            </select>
+          </label>
+          <div class="d-flex">
+            <h6>Are you specialized in the field of Tech?</h6>
+            <label for="tech">
+              Yes
+              <input
+                type="radio"
+                value="tech"
+                class="check"
+                name="job"
+                id="tech"
+              />
+            </label>
+            <label for="notTech"
+              >No
+              <input
+                type="radio"
+                value="notTech"
+                class="check"
+                name="job"
+                id="notTech"
+              />
+            </label>
+          </div>
+          <label for="salary">
+            Enter your current Salary:
+            <input type="salary" name="salary" id="salary" placeholder="$ 00" />
+          </label>
+          <label for="agree">
+            Do you agree that the data would be accessed by FreeCodeCamp
+            <input
+              type="checkbox"
+              value="agree"
+              class="check"
+              name="agree"
+              id="agree"
+            />
+          </label>
+          <label for="accept">
+            Do you accept that the data would be accessed by FreeCodeCamp
+            <input
+              type="checkbox"
+              value="accept"
+              class="check"
+              name="accept"
+              id="accept"
+            />
+          </label>
+          <label for="sumary">
+            Please enter a brief summary about your job description:<br
+          /></label>
+          <textarea
+            name="sumary"
+            id="sumary"
+            cols="50"
+            rows="15"
+            placeholder="As a front end developer my job is to design project on the internet this project may be written in javascript or using one of javascript popular framework {React}"
+          ></textarea>
+
+          <button type="submit" id="submit">Send</button>
+        </form>
+        <hr />
+        <div class="form-footer">
+          <div class="d-flex">
+            <span class="foot">&copy; This was made as an assesment for </span>
+            <img
+              class="footer-img"
+              src="https://cdn.freecodecamp.org/platform/universal/fcc_meta_1920X1080-indigo.png"
+              alt="FreeCodeCamp"
+            />
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
